@@ -1,6 +1,6 @@
 {
   "name": "awesome-print",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Beautifully print your JavaScript objects",
   "main": "index.js",
   "repository": {
