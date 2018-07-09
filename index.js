@@ -35,7 +35,35 @@ print.colors = {
  * Awesome print
  */
 
-function print (obj) {
+function print (param) {
+  var type = typeof param
+  switch (type) {
+    case 'string':
+      return typeString(param)
+    case 'number':
+      return typeNumber(param)
+    case 'array':
+      return typeArray(param)
+    case 'object':
+      return typeObject(param)
+    default:
+      return
+  }
+}
+
+function typeString (str) {
+  console.log(stringify(str));
+}
+
+function typeNumber (number) {
+  console.log(stringify(number));
+}
+
+function typeArray (array) {
+  console.log(stringify(array));
+}
+
+function typeObject (obj) {
   var keys = Object.keys(obj);
 
   // sort keys alphabetically if enabled
